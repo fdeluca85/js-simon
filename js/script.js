@@ -19,7 +19,7 @@ const element = document.getElementById('numeri_random');
 
 element.innerHTML = arrayRandomNumber;
 
-setTimeout (promptUtente, 5000);
+setTimeout (promptUtente, 30000);
 
 function promptUtente() {
     
