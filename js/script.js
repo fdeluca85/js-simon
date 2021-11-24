@@ -41,10 +41,10 @@ function promptUtente() {
             numeriGiusti.push(arrayRandomNumber[i]);
             // console.log(numeriGiusti);
             // console.log(contatore);
-            element.innerHTML = 'Ti sei ricordato tutti i numeri! ' + numeriGiusti;
+            element.innerHTML = 'Ti sei ricordato tutti i numeri! ' + "<br />" + numeriGiusti;
         }
         else{
-            element.innerHTML = 'Ti sei ricordato ' + contatore + " numeri " + numeriGiusti;
+            element.innerHTML = 'Ti sei ricordato ' + contatore + " numeri " + "<br />" + numeriGiusti;
         }
     }  
 
