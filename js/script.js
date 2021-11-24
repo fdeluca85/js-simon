@@ -31,14 +31,13 @@ function promptUtente() {
     }
     console.log(userNumbers);
     
-
-
     for (let i = 0; i<arrayRandomNumber.length; i++ ){
         // debugger;
         if (arrayRandomNumber[i] == userNumbers[i] ){
-        alert('hai vinto')}
-        else{
-        alert('hai perso')}
+            element.innerHTML = 'ti sei ricordato ' + arrayRandomNumber[i];
+    }
+        // else{
+        // alert('hai perso ' + userNumbers[i])}
     }
     
 
