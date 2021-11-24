@@ -31,15 +31,17 @@ function promptUtente() {
     }
     console.log(userNumbers);
     
+
+    let contatore=0;
+    
     for (let i = 0; i<arrayRandomNumber.length; i++ ){
         // debugger;
         if (arrayRandomNumber[i] == userNumbers[i] ){
-            element.innerHTML = 'ti sei ricordato ' + arrayRandomNumber[i];
-    }
-        // else{
-        // alert('hai perso ' + userNumbers[i])}
-    }
-    
+            contatore++;
+            console.log(contatore);
+            element.innerHTML = 'ti sei ricordato ' + contatore + " numeri";
+        }
+    }   
 
 
 }
