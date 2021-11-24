@@ -22,6 +22,15 @@ element.innerHTML = arrayRandomNumber;
 setTimeout (promptUtente, 5000);
 
 function promptUtente() {
-    prompt ('insersici un numero');
+    element.innerHTML = '';
+
+    let userNumbers = [];
+    for (let i = 0; i < 5; i++){
+        userNumbers.push(parseInt(prompt("Inserisci un numero")))
+    }
+    console.log(userNumbers);
     
+    console.log(arrayRandomNumber.includes(userNumbers));
+
+
 }
