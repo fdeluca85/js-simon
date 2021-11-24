@@ -7,7 +7,7 @@
 
 let arrayRandomNumber = [];
 while(arrayRandomNumber.length < 5){
-    let numeri = Math.floor(Math.random() * 100) + 1 *5;
+    let numeri = Math.floor(Math.random() * 100) + 1;
     if(arrayRandomNumber.indexOf(numeri) === -1) arrayRandomNumber.push(numeri);
 }
 console.log(arrayRandomNumber);
@@ -19,7 +19,7 @@ const element = document.getElementById('numeri_random');
 
 element.innerHTML = arrayRandomNumber;
 
-setTimeout (promptUtente, 5000);
+setTimeout (promptUtente, 30000);
 
 function promptUtente() {
     
@@ -33,15 +33,20 @@ function promptUtente() {
     
 
     let contatore=0;
-    
+    let numeriGiusti = [];
     for (let i = 0; i<arrayRandomNumber.length; i++ ){
         // debugger;
         if (arrayRandomNumber[i] == userNumbers[i] ){
             contatore++;
-            console.log(contatore);
-            element.innerHTML = 'ti sei ricordato ' + contatore + " numeri";
+            numeriGiusti.push(arrayRandomNumber[i]);
+            // console.log(numeriGiusti);
+            // console.log(contatore);
+            element.innerHTML = 'Ti sei ricordato ' + contatore + " numeri: " + numeriGiusti;
         }
-    }   
+        else{
+            element.innerHTML = 'Non hai una buona memoria';
+        }
+    }  
 
 
 }

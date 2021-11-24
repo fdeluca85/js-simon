@@ -6,8 +6,17 @@
 body{
     /* background-color: aquamarine; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
-
+header{
+    height: 150px;
+}
+h1{
+    text-transform: uppercase;
+    background-color: cadetblue;
+    color: white;
+    margin-bottom: 30px;
+}
 .container{
     display: flex;
     align-content: center;
@@ -20,7 +29,7 @@ body{
     /* border: 1px solid black; */
     border-radius: 20px;
     margin: auto;
-    height: 100px;
+    padding: 20px;
     width: 500px;
     text-align: center;
     display: flex;
