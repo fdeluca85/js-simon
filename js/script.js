@@ -22,6 +22,7 @@ element.innerHTML = arrayRandomNumber;
 setTimeout (promptUtente, 5000);
 
 function promptUtente() {
+    
     element.innerHTML = '';
 
     let userNumbers = [];
@@ -30,7 +31,16 @@ function promptUtente() {
     }
     console.log(userNumbers);
     
-    console.log(arrayRandomNumber.includes(userNumbers));
+
+
+    for (let i = 0; i<arrayRandomNumber.length; i++ ){
+        // debugger;
+        if (arrayRandomNumber[i] == userNumbers[i] ){
+        alert('hai vinto')}
+        else{
+        alert('hai perso')}
+    }
+    
 
 
 }

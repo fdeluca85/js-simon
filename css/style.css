@@ -7,3 +7,24 @@ body{
     /* background-color: aquamarine; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.container{
+    display: flex;
+    align-content: center;
+    justify-content:center;
+    margin: 20px auto;
+    /* border: 1px solid black; */
+}
+#numeri_random{
+    background-color: rgb(179, 228, 72) ;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    margin: auto;
+    height: 100px;
+    width: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
