@@ -7,7 +7,7 @@
 
 let arrayRandomNumber = [];
 while(arrayRandomNumber.length < 5){
-    let numeri = Math.floor(Math.random() * 100) + 1;
+    let numeri = Math.floor(Math.random() * 100) + 1 *5;
     if(arrayRandomNumber.indexOf(numeri) === -1) arrayRandomNumber.push(numeri);
 }
 console.log(arrayRandomNumber);
@@ -18,3 +18,10 @@ console.log(arrayRandomNumber);
 const element = document.getElementById('numeri_random');
 
 element.innerHTML = arrayRandomNumber;
+
+setTimeout (promptUtente, 5000);
+
+function promptUtente() {
+    prompt ('insersici un numero');
+    
+}
